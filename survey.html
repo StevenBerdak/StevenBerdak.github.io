@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<title>Survey Form</title>
+		<style>
+			body {
+				font-size: 1.2em;
+				padding: 0 1em;
+				font-family: 'Roboto', sans-serif;
+			}
+			#main {
+				text-align: center;
+			}
+			#form-outer {
+				max-width: 800px;
+				margin: 4vh auto;
+				background-color: hsla(170, 60%, 50%, 1);
+				border-radius: 12px;
+				overflow: hidden;
+				padding: 3vh 0px;
+				color: white;
+			}
+			#survey-form {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 2em 1em 0em 1em;
+				justify-content: center;
+			}
+			#number {
+				flex: 0 0 12em;
+			}
+			#description {
+				margin: 0 1em;
+			}
+			#comments {
+				height: 6em;
+				resize: vertical;
+				text-align: left;
+			}
+			#submit-outer {
+				width: 100%;
+			}
+			#submit {
+				margin: 1em auto;
+				padding: .8em 1.2em;
+				border-radius: 1em;
+				border: 0px solid;
+				background-color: white;
+				color: hsla(170, 60%, 50%, 1);
+				font-size: 1em;
+			}
+			.input-label {
+				flex: 0 0 40%;
+				text-align: right;
+				margin: 2vh 1vw;
+			}
+			.input-field-outer {
+				flex: 0 1 40%;
+				margin: 2vh 0;
+				align-self: center;
+				display: flex;
+				justify-content: flex-start;
+			}
+			.input-field {
+				margin: 0 12px;
+				flex: 0 1 300px;
+				text-align: center;
+				height: 2em;
+			}
+			.input-button {
+				margin: 12px 12px;
+			}
+			.input-list {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<h1 id="title">Food Survey</h1>
+			<div id="form-outer">
+				<p id="description">Let us know how you feel about food!</p>
+				<form id="survey-form" method="GET" action="">
+					<label class="input-label" id="name-label">Name:</label>
+					<div class="input-field-outer">
+						<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+					</div>
+					<label class="input-label" id="email-label">E-Mail:</label>
+					<div class="input-field-outer">
+						<input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+					</div>
+					<label id="number-label" class="input-label" id="number-label">How much do you love food 1-10?</label>
+					<div class="input-field-outer">
+						<input autofocus type="number" name="number" id="number" class="input-field" min="1" max="10" value="10" placeholder="How much you love food">
+					</div>
+					<label class="input-label">What is your favorite meal of the day?</label>
+					<div class="input-field-outer">
+					<select id="dropdown" class="input-field">
+						<option value="breakfast">Breakfast</option>
+						<option value="brunch">Brunch</option>
+						<option value="lunch">Lunch</option>
+						<option value="dinner">Dinner</option>
+						<option value="dessert">Dessert</option>
+					</select>
+					</div>
+					<label class="input-label">How hungry are you right now?</label>
+					<div class="input-field-outer input-list">
+						<label><input name="radio-buttons" value="Not Hungry" type="radio" class="input-button">Not Hungry</label>
+						<label><input name="radio-buttons" value="A Little Hungry" type="radio" class="input-button">A Little Hungry</label>
+						<label><input name="radio-buttons" value="Hungry" type="radio" class="input-button">Hungry</label>
+						<label><input name="radio-buttons" value="Very Hungry" type="radio" class="input-button">Very Hungry</label>
+					</div>
+					<label class="input-label">Which types of food do you enjoy?</label>
+					<div class="input-field-outer input-list">
+						<label><input name="foods-preferred" value="Italian" type="checkbox" class="input-button">Italian</label>
+						<label><input name="foods-preferred" value="Mexican" type="checkbox" class="input-button">Mexican</label>
+						<label><input name="foods-preferred" value="Indian" type="checkbox" class="input-button">Indian</label>
+						<label><input name="foods-preferred" value="American" type="checkbox" class="input-button">American</label>
+						<label><input name="foods-preferred" value="Asian" type="checkbox" class="input-button">Asian</label>
+						<label><input name="foods-preferred" value="Dessert" type="checkbox" class="input-button">Dessert</label>
+					</div>
+					<label class="input-label">Any additional comments about food?</label>
+					<div class="input-field-outer">
+						<textarea id="comments" class="input-field" name="comment" placeholder="Enter additional comments here..."/></textarea>
+					</div>
+					<div id="submit-outer">
+						<button id="submit" type="submit"><strong>Submit</strong></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
