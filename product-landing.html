@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>InfoTech</title>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -49,6 +50,7 @@
 			body {
 				background-color: #eee;
 				font-family: 'Ubuntu', sans-serif;
+				margin: 0em 0.5em;
 			}
 			@keyframes nav-link-animation {}
 				0% {
@@ -72,6 +74,9 @@
 
 			}
 			#header {
+				width: 100vw;
+				background-color: #eee;
+				position: fixed;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
@@ -95,13 +100,18 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				padding: 5em 0;
+				padding: 10em 0 5em;
 				background: lightgray;
 				background-image: url("images/binary-code.jpg");
 				background-attachment: fixed;
 				background-size: cover;
 				color: dimgray;
 				text-align: center;
+			}
+			@media(max-width: 600px) {
+				#hero {
+					padding: 15em 0 5em;
+				}
 			}
 			#hero > h2 {
 				color: mintcream;
@@ -130,6 +140,24 @@
 			}
 			#features {
 				padding: 3em 0;
+			}
+			#how-it-works {
+				text-align: center;
+			}
+			#footer {
+				background: #ddd;
+				text-align: right;
+				display: flex;
+				padding: 1em;
+				flex-direction: column;
+				margin: 0 0.5em;
+			}
+			#footer-links {
+				display: flex;
+				flex: 0 1 100%;
+				flex-direction: row;
+				margin-left: auto;
+				flex-wrap: wrap;
 			}
 			.container {
 				max-width: 1000px;
@@ -169,6 +197,9 @@
 				width:100%;
 				height:100%;
 			}
+			.footer-link {
+				margin: 0 0.5em;
+			}
 		</style>
 	</head>
 	<body>		
@@ -180,13 +211,12 @@
 				</div>
 				<nav id="nav-bar">
 					<a href="#features" class="nav-link">Features</a>
-					<a href="" class="nav-link">How It Works</a>
-					<a href="" class="nav-link">Pricing</a>
+					<a href="#how-it-works" class="nav-link">How It Works</a>
 				</nav>
 			</header>
 			<section id="hero">
 				<h2>Pushing the boundary of technology</h2>
-				<form id="form" action="">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
 					<input name="email" id="input-email" type="email" placeholder="Enter your email address" required/>
 					<input id="input-submit" type="submit" value="Learn More" class="submit-button"/>
 				</form>
@@ -215,12 +245,26 @@
 						<p>Technology is augmenting our modes of transportation in three dimensional space time by allowing us to travel with higher efficiency and safety than ever observed before.</p>
 					</div>
 				</div>
+			</section>
+			<section id="how-it-works">
+				<h1>How It Works</h1>
 				<div class="video-size-protection">
 					<div class="video-container" id="video">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/itJNlsM9BM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</section>
+			<footer>
+				<div id="footer">
+					<div id="footer-links" style="padding-left: auto">
+						<a href="" class="footer-link">Terms</a>
+						<a href="" class="footer-link">Contact</a>
+					</div>
+					<div>
+						<span>Copyright 2019, InfoTech</span>
+					</div>
+				</div>
+			</footer>
 			</div>		
 		</div>
 	</body>
