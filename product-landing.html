@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>InfoTech</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<style>
+			/* Google style css rules */
+			.material-icons {
+				font-family: 'Material Icons';
+				font-weight: normal;
+				font-style: normal;
+				font-size: 2em;  /* Preferred icon size */
+				display: inline-block;
+				line-height: 1;
+				text-transform: none;
+				letter-spacing: normal;
+				word-wrap: normal;
+				white-space: nowrap;
+				direction: ltr;
+				margin: 0 0.5em;
+
+				/* Support for all WebKit browsers. */
+				-webkit-font-smoothing: antialiased;
+				/* Support for Safari and Chrome. */
+				text-rendering: optimizeLegibility;
+
+				/* Support for Firefox. */
+				-moz-osx-font-smoothing: grayscale;
+
+				/* Support for IE. */
+				font-feature-settings: 'liga';
+			}
+
+			/* Rules for using icons as black on a light background. */
+			.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+			.material-icons.page-icon { color: orangered; }
+			.material-icons.product-icon { margin: 4vw; font-size: 4em; color: #ffc400; }
+
+			/* Page css rules */
+
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				background-color: #eee;
+				font-family: 'Ubuntu', sans-serif;
+			}
+			#main {
+
+			}
+			#header {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 1em;
+			}
+			#header-logo-wrapper {
+				display: flex;
+				text-align: center;
+				align-items: center;
+			}
+			#nav-bar {
+				display: flex;
+				text-align: center;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+			#header-label {
+				font-family: 'Press Start 2P', cursive;
+			}
+			#hero {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 5em 0;
+				background: lightgray;
+				background-image: url("images/binary-code.jpg");
+				background-attachment: fixed;
+				background-size: cover;
+				color: dimgray;
+				text-align: center;
+			}
+			#hero > h2 {
+				color: mintcream;
+			}
+			#hero > form {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 1em 0;
+			}
+			#input-email {
+				width: 20em;
+				border: 0 solid;
+				border-radius: 4px;
+				padding: 0.5em 1em;
+			}
+			#input-submit {
+				width: 12em;
+				margin: 1em;
+				border-radius: 4px;
+				padding: 0.5em 1em;
+				border: 0 solid;
+				background: #02afd1;
+				color: white;
+				font-weight: bold;
+			}
+			#features {
+				padding: 1em 0;
+			}
+			.container {
+				max-width: 1000px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			.nav-link {
+				flex: 0 1 auto;
+				padding: 1em 3em;
+			}
+			.flex-row {
+				display: flex;
+			}
+			.description {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 1em 0.5em;
+			}
+			.description * {
+				margin: 0;
+			}
+			.video-size-protection {
+				max-width: 600px;
+				margin: 2em auto;
+			}
+			.video-container {
+				position: relative;
+				padding-bottom: 52%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			.video-container iframe {
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+			}
+		</style>
+	</head>
+	<body>		
+		<div id="main">
+			<header id="header">
+				<div id="header-logo-wrapper">
+					<i id="header-img" class="material-icons page-icon">donut_small</i>
+					<label id="header-label">InfoTech</label>
+				</div>
+				<nav id="nav-bar">
+					<a href="#features" class="nav-link">Features</a>
+					<a class="nav-link">How It Works</a>
+					<a class="nav-link">Pricing</a>
+				</nav>
+			</header>
+			<section id="hero">
+				<h2>Pushing the boundaries of technology</h2>
+				<form id="form" action="">
+					<input name="email" id="input-email" type="email" placeholder="Enter your email address" required/>
+					<input id="input-submit" type="submit" value="Learn More" class="submit-button"/>
+				</form>
+			</section>
+			<section id="features">
+				<div class="container">
+					<div class="flex-row">
+						<i class="material-icons product-icon">people_outline</i>
+						<div class="description">
+							<h2>Facilitating Human Interaction</h2>
+							<p>Technology helps people communicate by providing many different channels to relay information accross multiple mediums.</p>
+						</div>
+					</div>
+				<div class="container">
+				<div class="flex-row">
+					<i class="material-icons product-icon">language</i>
+					<div class="description">
+						<h2>Advancing Technology Worldwide</h2>
+						<p>Technology is continaully increasing with new developments and discoveries at an accelerating rate.</p>
+					</div>
+				</div>
+				<div class="flex-row">
+					<i class="material-icons product-icon">flight_takeoff</i>
+					<div class="description">
+						<h2>Enhancing Universal Travel Methods</h2>
+						<p>Technology is augmenting our modes of transportation in three dimensional space time by allowing us to travel with higher efficiency and safety than ever observed before.</p>
+					</div>
+				</div>
+				<div class="video-size-protection">
+					<div class="video-container" id="video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/itJNlsM9BM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+			</div>		
+		</div>
+	</body>
+</html>
