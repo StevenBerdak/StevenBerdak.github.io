@@ -1,6 +1,43 @@
+<!doctype html>
+<html lang="en">
 <html>
-	<head>	
+	<head>
+		<meta charset="utf-8">
+		<title>Page Title</title>
+		<style>
+			body {
+				font-size: 1.2em;
+			}
+			a {
+				margin: 0.5em;
+			}
+			#main {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		</style>
 	</head>
 	<body>
+		<div id="main">
+			<h1>freeCodeCamp Projects</h1>
+			<sub>Steven Berdak</sub>
+			<hr style="width: 50vw;">
+			<a id="tribute-page">Tribute Page</a>
+			<a id="survey-page">Survery Page</a>
+			<a id="product-page">Tribute Page</a>
+		</div>
+
+		<script>
+			// URL constants
+			const baseUrl = "https://stevenberdak.github.io/";
+			const tributeUrl = baseUrl + "tribute.html";
+			const surveryUrl = baseUrl + "survey.html";
+
+			// Element id constants
+
+			document.getElementById('tribute-page').href = tributeUrl;
+			document.getElementById('survey-page').href = surveryUrl;
+		</script>
 	</body>
 </html>
