@@ -5,26 +5,145 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Poi Documentation</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 		<style>
-			#main {
+			body, html {
+				margin: 0;
+				padding: 0;
+			}
+			body * {
+				font-family: 'Lato', serif;
+			}
+			header {
+				font-size: 1.8em;
+				word-break: break-word;
+			}
+			#navbar {
 
 			}
+			#nav-header {
+				text-align: center;
+				margin: 0.5em;
+			}
+			#navbar ul {
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding-left: 0;
+				background-color: lightgray;
+				border-top: 1px solid;
+				border-color: black;
+			}
+			#navbar ul a {
+				vertical-align: mid
+			}
+			#navbar ul a:link {
+				color: black;
+			}
+			#navbar ul a:visited {
+				color: black;
+			}
+			#navbar ul a:hover {
+				color: dimgray;
+			}
+			#navbar ul a li {
+				border-bottom: 1px solid;
+				border-color: black;
+				padding: 1em 0;
+				text-align: center;
+			}
+			#main-doc {
+				margin: 2em;
+			}
+
+
+			@media (max-width: 600px) {
+				#navbar ul {
+					max-height: 50vh;
+				}
+			}
+
+			@media (min-width: 600px) {
+				#navbar {
+					position: fixed;
+					top: 0;
+					left: 0;
+					height: 100vh;
+					width: 18em;
+					border-right: solid;
+					border-color: darkgray;
+				}
+				#main-doc {
+					position: absolute;
+					left: 18em;
+				}
+			}
+
+			@media (min-width: 1000px) {
+				#navbar {
+					position: fixed;
+					top: 0;
+					left: 0;
+					height: 100vh;
+					width: 28vw;
+					border-right: solid;
+					border-color: darkgray;
+				}
+				#main-doc {
+					position: absolute;
+					left: 28vw;
+				}
+			}
+
+			@media (min-width: 1300px) {
+				#navbar {
+					position: fixed;
+					top: 0;
+					left: 0;
+					height: 100vh;
+					width: 20vw;
+					border-right: solid;
+					border-color: darkgray;
+				}
+				#main-doc {
+					position: absolute;
+					left: 20vw;
+				}
+			}
+
 			.main-section {
 
+			}
+			.nav-link {
+				text-decoration: none;
+				list-style-type: none;
 			}
 		</style>
 	</head>
 	<body>
+		<nav id="navbar">
+			<header id="nav-header">Poi Documentation</header>
+			<ul>
+			<a class="nav-link" href="#introduction"><li>Introduction</li></a>
+			<a class="nav-link" href="#necessary_materials"><li>Necessary Materials</li></a>
+			<a class="nav-link" href="#poi_in_flow_arts"><li>Poi In Flow Arts</li></a>
+			<a class="nav-link" href="#poi_timing_and_direction"><li>Poi Timing And Direction</li></a>
+			<a class="nav-link" href="#weaves"><li>Weaves</li></a>
+			<a class="nav-link" href="#butterflies"><li>Butterflies</li></a>
+			<a class="nav-link" href="#stalls"><li>Stalls</li></a>
+			<a class="nav-link" href="#reference"><li>Reference</li></a>
+			</ul>
+		</nav>
 		<main id="main-doc">
 			<section id="introduction" class="main-section">
 				<header>Introduction</header>
-				<p>Poi is a body movement performance art that. It consists of two balls normally made of rubber or fire rope made into a ball that are atteched to rope or chians which the poi spinner holds the other end of. The poi spinning moves the balls across his body in various patterns utilizing geometric patterns and timing. Many poi spinners find it complementary to spin the poi to music often times attemping to synthesize the rhythm into the motion of the poi. There are various common popular types of poi:</p>
+				<p>Poi is a body movement and pattern based performance art. It consists of two poi heads that are atteched to rope or chians that are connected to handles or loops that the poi spinning used to hold the poi. Many poi spinners find it complementary to spin the poi to music often times attemping to synthesize the rhythm into the motion of the poi. There are various common popular types of poi:</p>
 
 				<ul>
-					<li>Normal/Practice Poi</li>
+					<li>Contact/Practice Poi</li>
 					<li>Fire Poi</li>
 					<li>Flag Poi</li>
-					<li>Ribbon Poi</li>
+					<li>Streamer Poi</li>
 					<li>Glow Poi</li>
 					<li>Sparkle Poi</li>
 				</ul>
@@ -62,8 +181,8 @@
 				<header>Poi Timing and Direction</header>
 				<p>Poi termonology denotes four common patterns for spinning the poi. The terminology assumes that the poi are both spun along the same plane of the body. The two most common planes are wall-plane and wheel-plane. Wall-plane means that the poi heads travel across the front of the body between both sides and wheel-plane means that the poi heads travel across the poi spinner's side between front and back. For the purposes of this article we will use the following terminology to denote the position of the pois:</p>
 				<ul>
-					<li>Together-time: The poi balls are spun so that the heads of the poi both reach a fixed point at the same time.</li>
-					<li>Split-time: The poi balls are spun so that the poi heads reach a fixed point in an alternating fashion, or in other words at a 180&deg phase.</li>
+					<li>Together-time: The poi heads are spun so that the heads of the poi both reach a fixed point at the same time.</li>
+					<li>Split-time: The poi heads are spun so that the poi heads reach a fixed point in an alternating fashion, or in other words at a 180&deg phase.</li>
 				</ul>
 				<p>Along with position we also note the direction the poi are traveling. The two common directions are same-direction and opposite-direction; although there can be more complex combinations of direction for more advanced moves. The direction of the poi are denoted as follows:</p>
 				<ul>
