@@ -40,7 +40,7 @@
 			/* Rules for using icons as black on a light background. */
 			.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
 			.material-icons.page-icon { color: #02afd1; }
-			.material-icons.product-icon { margin: 4vw; font-size: 4em; }
+			.material-icons.product-icon { font-size: 4em; }
 
 			/* Page css rules */
 
@@ -50,15 +50,9 @@
 			body {
 				background-color: #eee;
 				font-family: 'Ubuntu', sans-serif;
-				margin: 0em 0.5em;
+				margin: 0;
+				padding: 0;
 			}
-			@keyframes nav-link-animation {}
-				0% {
-					padding-bottom: 0em;
-				}
-				100% {
-					padding-bottom: 0.5em;
-				}
 			a {
 				font-size: 1.1em;
 				transition: color 0.11s linear;
@@ -74,13 +68,15 @@
 
 			}
 			#header {
-				width: 100vw;
 				background-color: #eee;
 				position: fixed;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
-				padding: 1em;
+				padding: 1vw;
+				width: auto;
+				right: 0;
+				left: 0;
 			}
 			#header-logo-wrapper {
 				display: flex;
@@ -92,6 +88,9 @@
 				text-align: center;
 				align-items: center;
 				flex-wrap: wrap;
+			}
+			#header-logo-wrapper {
+				margin: 1em 0;
 			}
 			#header-label {
 				font-family: 'Press Start 2P', cursive;
