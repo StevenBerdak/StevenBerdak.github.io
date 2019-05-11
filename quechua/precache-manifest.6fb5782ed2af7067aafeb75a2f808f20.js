@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "./static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "26dac5e069c3c5b0cd60",
+    "revision": "57354b8aac260d21cb21",
     "url": "./static/css/main.39028e46.chunk.css"
   },
   {
@@ -20,20 +20,20 @@ self.__precacheManifest = [
     "url": "./static/js/2.73cfe19e.chunk.js"
   },
   {
-    "revision": "b3831318146710e4bc6bc1ed1f5c90ad",
-    "url": "./static/media/peru_coat_of_arms.b3831318.png"
+    "revision": "19df19b05c55645cb6d87551edce7309",
+    "url": "./static/media/peru_flag.19df19b0.png"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "./static/media/flags.9c74e172.png"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "./static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
     "revision": "cd6c777f1945164224dee082abaea03a",
     "url": "./static/media/outline-icons.cd6c777f.woff2"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "./static/media/outline-icons.ef60a4f6.woff"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "./static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "26dac5e069c3c5b0cd60",
-    "url": "./static/js/main.07dcc8de.chunk.js"
+    "revision": "57354b8aac260d21cb21",
+    "url": "./static/js/main.2ccd66b4.chunk.js"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "./static/css/2.b8d1b3a7.chunk.css"
   },
   {
-    "revision": "1c3c141fb9289e4deaff3941b45e020c",
+    "revision": "416995276b01ea6d584334ed76b7d043",
     "url": "./index.html"
   }
 ];
